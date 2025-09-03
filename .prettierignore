@@ -1,0 +1,17 @@
+# Build artifacts
+.next
+out
+public
+build
+.turbo
+_next
+__tmp__
+dist
+node_modules
+target
+compiled
+pnpm-lock.yaml
+package-lock.json
+src/components/ui
+ 
+ 
