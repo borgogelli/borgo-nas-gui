@@ -1,0 +1,41 @@
+API:
+
+    http://localhost:3000/api/ping
+    ....
+    ........
+
+GUI:
+
+    http://localhost:3000
+
+    Misc
+        http://localhost:3000/hello
+        http://localhost:3000/home
+        http://localhost:3000/admin
+
+    Db
+        http://localhost:3000/dbtest
+        http://localhost:3000/dbstats
+
+    Browser
+        http://localhost:3000/files
+
+    Search
+        http://localhost:3000/search
+        http://localhost:3000/hash
+
+TODO: 
+ 
+ 
+show duplicates 
+    group by file name
+    group by path		
+
+stats
+    records count
+    folders count
+    show duplicates stats by file
+    show duplicates stats by folder
+
+componente file record (info) 
+componente file duplicates (same name, same fullpath, same hash only)

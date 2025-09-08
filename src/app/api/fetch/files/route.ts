@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import Database from 'better-sqlite3'
 import { db } from '@/lib/db'
 
+type CountRow = { count: number }
+
 export async function GET(req: NextRequest) {
     try {
         const url = new URL(req.url)
@@ -9,9 +11,10 @@ export async function GET(req: NextRequest) {
         const limit = parseInt(url.searchParams.get('limit') || '10', 10)
         const offset = (page - 1) * limit
 
-        const total = db.prepare('SELECT COUNT(*) as count FROM FileHash').get().count
+        const rows0 = db.prepare('SELECT COUNT(*) as count FROM FileHash').get()  as CountRow
+        const total = rows0.count;
         const rows = db.prepare('SELECT * FROM FileHash LIMIT ? OFFSET ?').all(limit, offset)
-
+ 
         return NextResponse.json({
             status: 'success',
             data: rows,

@@ -15,32 +15,37 @@ import {
 const items = [
     {
         title: 'Home',
-        url: '#',
+        url: '/admin',
         icon: Home,
     },
     {
         title: 'Db test',
-        url: '/dbtest',
+        url: '/admin/dbtest',
         icon: Inbox,
     },
     {
         title: 'Db stats',
-        url: '/dbstats',
+        url: '/admin/dbstats',
         icon: Inbox,
     },
     {
         title: 'Browsers',
-        url: '/files',
+        url: '/admin/files',
         icon: Inbox,
     },
     {
         title: 'Hash',
-        url: '/hash',
+        url: '/admin/hash',
         icon: Calendar,
     },
     {
+        title: 'Hash2',
+        url: '/admin/hash2',
+        icon: Calendar,
+    },    
+    {
         title: 'Query',
-        url: '/query',
+        url: '/admin/query',
         icon: Calendar,
     },
     {
@@ -49,8 +54,13 @@ const items = [
         icon: Search,
     },
     {
+        title: 'Java',
+        url: '/admin/java',
+        icon: Settings,
+    },    
+    {
         title: 'Settings',
-        url: '#',
+        url: '/admin/settings',
         icon: Settings,
     },
 ]
